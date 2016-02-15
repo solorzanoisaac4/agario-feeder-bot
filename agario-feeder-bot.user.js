@@ -23,12 +23,12 @@ var canvas = document.getElementById("canvas");
 last_transmited_game_server = null;
 
 socket.on('force-login', function (data) {
-    socket.emit("login", {"uuid":client_uuid, "type":"client"});
+    socket.emit("login", {"e7f9":client_uuid, "type":"client"});
     transmit_game_server();
 });
 
 socket.on('spawn-count', function (data) {
-    console.log("Bot Count: " + data);
+    console.log("Bot Count:120" + data);
 });
 
 var client_uuid = localStorage.getItem('client_uuid');
